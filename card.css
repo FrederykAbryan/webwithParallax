@@ -1,0 +1,160 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  .paral2{
+    background-color: rgb(145, 31, 11);
+    background-size: cover;
+  }
+
+  .cards {
+    justify-content: center;
+    align-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    width: 50%;
+    margin: auto;
+}
+
+  
+  .card--1 .card__img, .card--1 .card__img--hover {
+      background-image: url('https://www.tasteofhome.com/wp-content/uploads/2017/10/Veggie-Pizza-with-Herbed-Tomato-Crust_EXPS_HRBZ17_36065_B09_06_1b-3.jpg');
+  }
+  
+  .card--2 .card__img, .card--2 .card__img--hover {
+      background-image: url('https://www.tasteofhome.com/wp-content/uploads/2017/10/Veggie-Pizza-with-Herbed-Tomato-Crust_EXPS_HRBZ17_36065_B09_06_1b-3.jpg');
+  }
+
+  .card--3 .card__img, .card--3 .card__img--hover {
+      background-image: url('https://www.tasteofhome.com/wp-content/uploads/2017/10/Veggie-Pizza-with-Herbed-Tomato-Crust_EXPS_HRBZ17_36065_B09_06_1b-3.jpg');
+  }
+  .card--4 .card__img, .card--4 .card__img--hover {
+      background-image: url('https://www.tasteofhome.com/wp-content/uploads/2017/10/Veggie-Pizza-with-Herbed-Tomato-Crust_EXPS_HRBZ17_36065_B09_06_1b-3.jpg');
+  }
+  .card--5 .card__img, .card--5 .card__img--hover {
+      background-image: url('https://www.tasteofhome.com/wp-content/uploads/2017/10/Veggie-Pizza-with-Herbed-Tomato-Crust_EXPS_HRBZ17_36065_B09_06_1b-3.jpg');
+  }
+  .card--6 .card__img, .card--6 .card__img--hover {
+      background-image: url('https://www.tasteofhome.com/wp-content/uploads/2017/10/Veggie-Pizza-with-Herbed-Tomato-Crust_EXPS_HRBZ17_36065_B09_06_1b-3.jpg');
+  }
+  
+  
+  .card__img {
+    visibility: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 235px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+    
+  }
+  
+  .card__img--hover {
+    transition: 0.2s all ease-out;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+    position: absolute;
+      height: 235px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+    
+  }
+  .card {
+    margin-right: 25px;
+    margin-top: 20px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 90%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  }
+  .card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+      transform: scale(1.10, 1.10);
+  }
+  
+  .card__info {
+  z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+     padding: 16px 24px 24px 24px;
+  }
+  
+  .card__category {
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    color: #868686;
+  }
+  
+  .card__title {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-family: 'Roboto Slab', serif;
+  }
+  
+  .card__by {
+      font-size: 12px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+  }
+  
+  .card__author {
+      font-weight: 600;
+      text-decoration: none;
+      color: #AD7D52;
+  }
+  
+  .card:hover .card__img--hover {
+      height: 100%;
+      opacity: 0.3;
+  }
+  
+  .card:hover .card__info-hover {
+      opacity: 1;
+  }
+  
+  @media (max-width: 800px) {
+    .column,.row {
+      flex-wrap: wrap;
+      flex: 50%;
+      max-width: 90%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column{
+      max-width: 100%;
+      max-height: 50%;
+    }
+  }
+
+  
