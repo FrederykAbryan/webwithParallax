@@ -1,7 +1,19 @@
 * {
+	scrollbar-width: thin;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+	width: 8px;
+}
+*::-webkit-scrollbar-track {
+	background: tomato;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(145, 31, 11);
+	border-radius: 20px;
+	border: 2px solid rgb(145, 31, 11);
 }
 
 nav {
@@ -175,16 +187,7 @@ nav {
 	background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1024px) {
-	.nav-links {
-		width: 60%;
-	}
-}
-
 @media screen and (max-width: 768px) {
-	body {
-		overflow-x: hidden;
-	}
 	.nav-links {
 		position: absolute;
 		right: 0px;
